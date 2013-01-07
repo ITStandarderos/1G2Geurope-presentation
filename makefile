@@ -1,4 +1,4 @@
-NAME = Trust_betw_Nodes_in_WMNs_presentation
+NAME = presentation_1g2gEurope
 
 all: $(NAME).tex $(NAME).bib
 	pdflatex $(NAME).tex

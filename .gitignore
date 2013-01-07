@@ -4,8 +4,11 @@
 *.dvi
 *.nav
 *.out
-*.pdf
 *.ps
 *.snm
 *.synctex.gz
 *.toc
+presentation_1g2gEurope.pdf
+*.bbl
+*.blg
+*.log
