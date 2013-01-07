@@ -1,0 +1,44 @@
+#Notes from the cases-papers regarding 1G Germany
+
+##Bekkers
+
+* German-French approach is mentioned
+	* Proposed by Alcatel (french) and SEL (german)
+	* Approach was denied due to high amount of IPRs belonging to Alcatel and SEL
+	
+##Lyytinen and Fomin
+	
+* 1979 Innovation process of the C net started
+	* Germany was behind Japan, US and Nordics in regard of starting the service
+	but Germans had focus on advanced technology and postponed the start
+	* First only planned as national technology, but then planned for export as is superior
+	* Developed solution of Siemens came too late and was too expensive 
+	(but technically sophisticated)
+	* This resulted in a lag in developing other wireless service concepts (disadvantage regarding 2G)
+	
+* 1985 Deutsche Bundespost -> third complete C network
+	* Development/Design by Siemens
+
+* 1989 DBP moved to DBP Telekom
+	* Not a monopoly anymore in mobile telephony
+	
+* Finally the C net had no success
+	* It was expensive
+	* Closed System
+	* It attracted only few users (Gerrard, 1998) (Funk, 1998)
+	* Penetration rate approx. 0,03% (Funk and Methe, 2001)
+	
+* Different reactions on demand between Japan,Germany and Nordic monopolies
+	* (J,G) Raise prices to lower demand
+	* (NMT) Technology fix to cope with demand
+	
+* Technology-push (German, C-450) vs Market-pull (UK)
+
+##Rice and Glavin
+
+* by 1979 there were 75,000 mobile telephone subscribers in the Nordic countries as compared with 40,000 in the US Bell system and less than 10,000 each in Britain, Germany and France
+
+##Funk and Methe
+
+* Lack of competition in Germany and lack of leadership regarding government and firms
+* Some of the losing standards relied too heavily on committee-based mechanisms. Japan, Germany, and France allowed their national carriers to control the specifications for the standards and act as a monopoly in setting prices. The lack of openness in the standard reduced competition in infrastructure and handsets and thus prevented their prices along with service charges from falling.
