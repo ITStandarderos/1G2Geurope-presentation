@@ -1,0 +1,186 @@
+% Stolen from many themes in the beamer distribution.  Use at your own risk.  THE MGT.
+
+\mode<presentation>
+
+\definecolor{frametitleleftgradient}{rgb}{.05,.15,.4}
+\definecolor{frametitlerightgradient}{rgb}{.61,.7,.84}
+\definecolor{frametitletopgradient}{rgb}{0.82,0.87,0.98}
+\definecolor{frametitlebottomgradient}{rgb}{0.82,0.83,0.85}
+\definecolor{framefoottopgradient}{rgb}{0.84,0.84,0.85}
+\definecolor{framefootbottomgradient}{rgb}{1,1,1}
+\definecolor{title}{rgb}{0,0,0}
+\definecolor{author}{rgb}{0,.1,.5}
+
+\setbeamercolor{section in head/foot}{fg=red,bg=green}
+\setbeamercolor{subsection in head/foot}{fg=red,bg=green}
+
+\setbeamercolor{author in head/foot}{fg=white,bg=gray}
+\setbeamercolor{title in head/foot}{fg=white,bg=gray}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{author}{fg=author}
+
+\pgfdeclarehorizontalshading[frametitle.bg,frametitle right.bg]{beamer@frametitleshade}{5ex}{%
+  color(0pt)=(frametitle.bg);
+  color(\paperwidth)=(frametitle right.bg)}
+
+\pgfdeclarehorizontalshading{beamer@spacer}{0.5pt}{%
+  color(0pt)=(gray);
+  color(\paperwidth)=(gray)}
+
+\pgfdeclareverticalshading{beamer@frametitleverticalshade}{\paperwidth}{%
+  color(0pt)=(frametitletopgradient);
+  color(3pt)=(frametitlebottomgradient)}
+
+\pgfdeclareverticalshading{beamer@framefootshade}{\paperwidth}{%
+  color(0pt)=(framefootbottomgradient);
+  color(4ex)=(framefoottopgradient)}
+
+\defbeamertemplate*{frametitle}{dsgroup}
+{%
+  \vskip-2pt%
+  \usebeamercolor{frametitle right}%
+  \usebeamerfont{frametitle right}%
+  \hbox{\hskip-\Gm@lmargin\pgfuseshading{beamer@frametitleshade}%
+        \hskip-\paperwidth%
+        %\vskip -20pt%
+	\begin{minipage}[b][5ex][c]{\textwidth}
+	  \usebeamercolor{author in head/foot}
+	  \hskip2ex\textbf{\insertframetitle}%
+        \end{minipage}%
+  }%
+  \nointerlineskip
+  \hbox{\hskip-\Gm@lmargin\pgfuseshading{beamer@spacer}}%
+  \nointerlineskip
+  \hbox{\hskip-\Gm@lmargin\pgfuseshading{beamer@frametitleverticalshade}}%
+  \nointerlineskip
+  \hbox{\hskip-\Gm@lmargin\pgfuseshading{beamer@spacer}}%
+}
+
+\defbeamertemplate*{frametitle}{empty}
+{%
+    \begin{minipage}[b][5ex][c]{\textwidth}
+      \usebeamercolor{author in head/foot}
+      \hskip2ex\textbf{\insertframetitle}%
+        \end{minipage}%
+}
+
+\pgfdeclareimage[height=0.85cm]{rwthlogo}{rwth}
+% titlepage with RWTH logo
+\defbeamertemplate*{title page}{dsgroup}[1][]
+{
+  \setbeamertemplate{frametitle}{}
+  \frametitle{}
+  \vbox{}
+  \vfill
+%  \begin{centering}
+      \vspace{-7em}
+    \begin{beamercolorbox}[sep=5em,left,#1]{title}
+      {\usebeamerfont{title}\usebeamercolor{title}\bf \Large \inserttitle \par}%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle \par}%
+      \fi%
+      \vskip1em\par
+      \usebeamerfont{author} \textcolor{author}{\large \insertauthor}
+    \end{beamercolorbox}%
+%    \begin{beamercolorbox}[sep=5em,left,#1]{author}
+%      \usebeamerfont{author}\insertauthor
+%    \end{beamercolorbox}
+%    \begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+%      \usebeamerfont{institute}\insertinstitute
+%    \end{beamercolorbox}
+%    \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+%      \usebeamerfont{date}\insertdate
+%    \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+%  \end{centering}
+  \vfill
+}
+
+\defbeamertemplate*{footline}{dsgroup}
+{%
+  \hbox{\pgfuseshading{beamer@spacer}}%
+  \nointerlineskip
+   \hbox{\pgfuseshading{beamer@framefootshade}%
+        \hskip-\paperwidth%
+        \begin{minipage}[b][7ex][c]{0.3\paperwidth}
+        \hskip 5pt \includegraphics[width=0.05\paperwidth]{comsyslogo.png}
+        \end{minipage}%
+        \begin{minipage}[b][7ex][c]{0.4\paperwidth}
+        \begin{center}\textbf{\small \color{gray}\insertshortauthor}\end{center}%
+        \end{minipage}%
+        \begin{minipage}[b][7ex][c]{0.25\paperwidth}
+        \begin{center}\textbf{\small \color{gray}}\end{center}%
+        \end{minipage}%
+        \begin{minipage}[b][7ex][c]{0.05\paperwidth}
+        \begin{center}\textbf{\small \color{gray}\insertframenumber}\end{center}%
+        \end{minipage}%
+   }%
+  \nointerlineskip
+  \hbox{\pgfuseshading{beamer@spacer}}%
+}
+
+\defbeamertemplate*{footline}{empty}
+{%
+  \hbox{\pgfuseshading{beamer@spacer}}%
+  \nointerlineskip
+   \hbox{\pgfuseshading{beamer@framefootshade}%
+        \hskip-\paperwidth%
+        \begin{minipage}[b][7ex][c]{0.5\paperwidth}
+        \hskip 5pt \includegraphics[width=0.05\paperwidth]{comsyslogo.png}
+        \end{minipage}%
+        \begin{minipage}[b][7ex][c]{0.5\paperwidth}
+        \hskip0.23\paperwidth\includegraphics[width=0.25\paperwidth]{rwth.pdf}
+        \end{minipage}%
+   }%
+  \nointerlineskip
+  \hbox{\pgfuseshading{beamer@spacer}}%
+}
+
+\mode<all>
+
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{sections/subsections in toc}[ball]
+\setbeamertemplate{title page}[dsgroup][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!75!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=structure.fg!50!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor{frametitle}{fg=white,bg=frametitleleftgradient}
+\setbeamercolor{frametitle right}{fg=white,bg=frametitlerightgradient}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
+\setbeamerfont{block title}{size={}}
+
+\beamertemplatenavigationsymbolsempty
+
+\mode<all>
