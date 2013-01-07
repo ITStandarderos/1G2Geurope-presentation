@@ -1,2 +1,11 @@
 *.DS_Store*
 .tm_properties
+*.aux
+*.dvi
+*.nav
+*.out
+*.pdf
+*.ps
+*.snm
+*.synctex.gz
+*.toc
