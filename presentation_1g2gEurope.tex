@@ -1,0 +1,59 @@
+\documentclass{beamer}
+\title{1G/2G Europe}
+\subtitle{}
+\author{Malte Behrendt, Lucas Dohmen, Michael Hackstein, Nicolas Inden}
+\institute{Development of IT Standards}
+\date{\today}
+ 
+\usetheme{DS}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{epsf}
+\usepackage{rotating}
+\usepackage{ifthen}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{scalefnt}
+\usepackage{epsfig}
+\usepackage{psfrag}
+\usepackage{enumerate}
+\usepackage{xmpmulti}
+\usepackage{subfigure}
+
+\begin{document}
+
+% do the title page
+\setbeamertemplate{frametitle}[empty]
+\setbeamertemplate{footline}[empty]
+
+
+%use this if you don't adjust the title-background image
+\setbeamertemplate{background}{
+\includegraphics[width=\paperwidth,height=\paperheight]{pictures/title-background-empty.pdf}}
+\frame{\titlepage} 
+
+%use this if you adjust the title-background image to display the correct stuff
+%this is a dirty hack. :-(
+%\setbeamertemplate{background}{
+%\includegraphics[width=\paperwidth,height=\paperheight]{pictures/title-background.pdf}}
+%\frame{}
+
+
+
+\setbeamertemplate{frametitle}[dsgroup]
+\setbeamertemplate{footline}[dsgroup]
+\setcounter{page}{1} 
+\setbeamertemplate{background}{}
+
+% content goes here
+\frame{
+	\frametitle{Introduction}
+	Moin
+}
+
+\bibliographystyle{plain}
+
+\end{document}
