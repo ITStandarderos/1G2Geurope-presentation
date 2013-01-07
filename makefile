@@ -36,7 +36,7 @@ uncrab-nobib:
 	rm $(NAME).out
 	rm $(NAME).snm
 	rm $(NAME).toc
-	
+
 .PHONY: nobib
 nobib: $(NAME).tex
 	pdflatex $(NAME).tex
