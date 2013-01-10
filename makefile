@@ -15,7 +15,7 @@ clean:
 	rm *.out
 	rm *.snm
 	rm *.toc
-	rm *.pdf
+	rm $(NAME).pdf
 
 .PHONY: uncrab
 uncrab:
