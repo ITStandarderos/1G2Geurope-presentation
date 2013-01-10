@@ -1,8 +1,8 @@
 #Notes from the cases-papers regarding 1G Germany
 
-##Bekkers
+##Bekkers (concerning 2G)
 
-* German-French approach is mentioned
+* German-French approach for GSM (2G) is mentioned
 	* Proposed by Alcatel (french) and SEL (german)
 	* Approach was denied due to high amount of IPRs belonging to Alcatel and SEL
 	
@@ -16,7 +16,7 @@
 	(but technically sophisticated)
 	* This resulted in a lag in developing other wireless service concepts (disadvantage regarding 2G)
 	
-* 1985 Deutsche Bundespost -> third complete C network
+* 1985 Deutsche Bundespost -> started C network
 	* Development/Design by Siemens
 
 * 1989 DBP moved to DBP Telekom
