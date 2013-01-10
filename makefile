@@ -27,17 +27,3 @@ uncrab:
 	rm *.toc
 	rm *.bbl
 	rm *.blg
-	
-.PHONY: uncrab-nobib
-uncrab-nobib:
-	rm *.aux
-	rm *.log
-	rm *.nav
-	rm *.out
-	rm *.snm
-	rm *.toc
-
-.PHONY: nobib
-nobib: *.tex
-	pdflatex $(NAME).tex
-	make uncrab-nobib
