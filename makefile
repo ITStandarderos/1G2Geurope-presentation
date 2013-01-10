@@ -9,35 +9,21 @@ all: $(NAME).tex $(NAME).bib
 	
 .PHONY: clean
 clean:
-	rm $(NAME).aux
-	rm $(NAME).log
-	rm $(NAME).nav
-	rm $(NAME).out
-	rm $(NAME).snm
-	rm $(NAME).toc
+	rm *.aux
+	rm *.log
+	rm *.nav
+	rm *.out
+	rm *.snm
+	rm *.toc
 	rm $(NAME).pdf
 
 .PHONY: uncrab
 uncrab:
-	rm $(NAME).aux
-	rm $(NAME).log
-	rm $(NAME).nav
-	rm $(NAME).out
-	rm $(NAME).snm
-	rm $(NAME).toc
-	rm $(NAME).bbl
-	rm $(NAME).blg
-	
-.PHONY: uncrab-nobib
-uncrab-nobib:
-	rm $(NAME).aux
-	rm $(NAME).log
-	rm $(NAME).nav
-	rm $(NAME).out
-	rm $(NAME).snm
-	rm $(NAME).toc
-
-.PHONY: nobib
-nobib: $(NAME).tex
-	pdflatex $(NAME).tex
-	make uncrab-nobib
+	rm *.aux
+	rm *.log
+	rm *.nav
+	rm *.out
+	rm *.snm
+	rm *.toc
+	rm *.bbl
+	rm *.blg
