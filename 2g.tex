@@ -1,24 +1,45 @@
-\begin{frame}{Differences to 1G (NMT)}
+\begin{frame}{2G: Overview}
   \begin{itemize}
-    \item Much larger committee
-    \item Many people working on NMT worked on GSM also 
-    \item More interference by countries and companies
-    \item Technical development similar
+    \item \textbf{Institutes:}
+    \begin{itemize}
+      \item CEPT: Euro. Conference for post and telecom. management
+      \item GSM: Global System for Mobile Communications
+      \item ETSI: European Telecommunications Standards Institute
+    \end{itemize}
+    \item \textbf{Comparison to NMT:}
+    \begin{itemize}
+      \item Much larger committee
+      \item Many people worked for NMT and GSM 
+      \item More interference by countries and companies
+      \item Technical development similar
+    \end{itemize}
   \end{itemize}
+  
 \end{frame}
 
-\begin{frame}{GSM History}
- \begin{chrono}[10]{1982}{1992}{3ex}{\textwidth}
-   \event{1982}{CEPT started GSM Committee}
-   \event[1982]{1987}{Different technologies and proposals presented}
-   \event{1987}{\emph{memorandum of understanding} (13 states)}
-   \event{1988}{CEPT was replaced by ETSI}
-   \event[1990]{1993}{Siemens, Alcatel, Nokia and Ericsson enter cross-license agreement with Motorola}
-   \event{1992}{Introduction of system in Europe}
- \end{chrono}
+\begin{frame}{2G: GSM History}
+  \begin{tikzpicture}
+      \node[anchor=south west,inner sep=0] (timeline) at (0,0) {
+      \begin{chrono}[5]{1982}{1993}{4ex}{\textwidth}
+        \event{1982}{CEPT started GSM Committee}
+        \event[1982]{1986}{Technologies and proposals}
+        \event{1987}{\emph{memorandum of understanding}} % 13 states
+        \event{1988}{CEPT replaced by ETSI}
+        \event[1990]{1991}{Cross-license agreement}
+        \event{1992}{Introduction in Europe}
+      \end{chrono}
+      };
+      \only<2>{
+      \begin{scope}[x={(timeline.south east)},y={(timeline.north west)}]
+          \draw[red,ultra thick,rounded corners, fill=red!60] (0,0.05) rectangle (0.35,0.15);
+          \node[anchor=north west,inner sep=0] (timeline) at (0,0) {\small{Pre-standardisation}};
+          \draw[blue,ultra thick,rounded corners, fill=blue!60] (0.35,0.05) rectangle (0.65,0.15);
+          \node[anchor=north west,inner sep=0] (timeline) at (0.35,0) {\small{Standard Production}};
+          \draw[green,ultra thick,rounded corners, fill=green!60] (0.65,0.05) rectangle (0.9,0.15);
+          \node[anchor=north west,inner sep=0] (timeline) at (0.65,0) {\small{Standard Diffusion}};
+      \end{scope}}
+  \end{tikzpicture}
 \end{frame} 
-  
-
 %  \begin{description}
 %    \item[1982] CEPT started GSM %CEPT was only open for operators
 %    \item[1982-1987] Different technologies and proposals presented.
@@ -41,31 +62,31 @@
 %    \item[1994] GSM became big success
 %  \end{description}
 
-\begin{frame}{Standardisation Phases}
-  \begin{itemize}
-    \item \textbf{Pre-standardisation Phase:}
-    \begin{itemize}
-      \item Until Feb. 1987
-      \item different technologies and proposals
-      \item first without clear vision, later with standard goal in mind
-      \item No ownership intensification
-    \end{itemize}
-    \item \textbf{Standard Production Phase:}
-    \begin{itemize}
-      \item Feb. 1987 - 1991
-      \item Exact implementation decided
-      \item product development
-      \item Motorola intensified patenting, others refrained
-    \end{itemize}
-    \item \textbf{Standard Diffusion Phase:}
-    \begin{itemize}
-      \item After 1991
-      \item new services and additions
-    \end{itemize}
-  \end{itemize}
-\end{frame}
+%\begin{frame}{2G: Standardisation Phases}
+%  \begin{itemize}
+%    \item \textbf{Pre-standardisation Phase:}
+%    \begin{itemize}
+%      \item Until Feb. 1987
+%      \item different technologies and proposals
+%      \item first without clear vision, later with standard goal in mind
+%      \item No ownership intensification
+%    \end{itemize}
+%    \item \textbf{Standard Production Phase:}
+%    \begin{itemize}
+%      \item Feb. 1987 - 1991
+%      \item Exact implementation decided
+%      \item product development
+%      \item Motorola intensified patenting, others refrained
+%    \end{itemize}
+%    \item \textbf{Standard Diffusion Phase:}
+%    \begin{itemize}
+%      \item After 1991
+%      \item new services and additions
+%    \end{itemize}
+%  \end{itemize}
+%\end{frame}
 
-\begin{frame}{Essential IPRs}
+\begin{frame}{2G: Essential IPRs}
   \begin{columns}
       \begin{column}{0.55\textwidth}
           \includegraphics[width=\textwidth]{pictures/iprs}
@@ -83,14 +104,14 @@
       \end{columns}
 \end{frame}
 
-\begin{frame}{Market Shares}
+\begin{frame}{2G: Market Shares}
   \includegraphics[width=\textwidth]{pictures/2gmarketshares}
   
   Motorola, Siemens, Alcatel, Nokia and Ericsson held $85\%$ of the market shares in 1996.
 \end{frame}
 
 
-\begin{frame}{Success factors}
+\begin{frame}{2G: Success factors}
   \begin{itemize}
     \item \textbf{Timing}
     \begin{itemize}
