@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 \title{1G/2G Europe}
 \subtitle{}
 \author{Malte Behrendt, Lucas Dohmen,\\Michael Hackstein, Nicolas Inden}
@@ -23,6 +23,7 @@
 \usepackage{xmpmulti}
 \usepackage{subfigure}
 \usepackage{chrono}
+\usepackage[absolute,overlay]{textpos}
 
 \begin{document}
 
@@ -51,17 +52,74 @@
 
 % content goes here
 \section{Introduction}
+\begin{frame}{Overview}
+  \textblockorigin{0.0cm}{2.0cm}
+  \tableofcontents[currentsection]
+  
+  \begin{textblock*}{6cm}(7cm,0.5cm)
+   \includegraphics[width=1\columnwidth]{./pictures/0GNetworkStandards.png}
+  \end{textblock*}
+\end{frame}
 \include{0g_introduction}
+
 \section{1G}
+\begin{frame}{Overview}
+  \textblockorigin{0.0cm}{2.0cm}
+  \tableofcontents[currentsection]
+  
+  \begin{textblock*}{6cm}(7cm,0.5cm)
+   \includegraphics[width=1\columnwidth]{./pictures/1GNetworkStandards.png}
+  \end{textblock*}
+\end{frame}
 \include{1g_introduction}
 \include{1g_uk}
 \include{1g_germany}
 \include{1g_nmt}
-\include{1g_conclusion}
+%\include{1g_conclusion}
 \section{2G}
+\begin{frame}{Overview}
+  \textblockorigin{0.0cm}{2.0cm}
+  \tableofcontents[currentsection]
+  
+  \begin{textblock*}{6cm}(7cm,0.5cm)
+   \includegraphics[width=1\columnwidth]{./pictures/2GNetworkStandards.png}
+  \end{textblock*}
+\end{frame}
+
 \include{2g}
+
 \section{Conclusion}
+\begin{frame}{Overview}
+  \textblockorigin{0.0cm}{2.0cm}
+  \tableofcontents[currentsection]
+  
+  \begin{textblock*}{12.5cm}(0cm,3.0cm)
+    \begin{figure}[b!]
+    \begin{flushright}
+      \includegraphics[width=0.25\columnwidth]{./pictures/Evaluation.jpg}
+    \end{flushright}  
+  \end{figure}
+  \end{textblock*}
+\end{frame}
+
 \include{conclusion}
+
+\section*{Q\&A}
+\begin{frame}
+  \frametitle{Questions}
+
+  \begin{center}
+    Thanks for your attention!\\
+    \vspace{0.5cm}
+    {\LARGE\textbf{Questions?}}
+  \end{center}
+
+  \begin{figure}[b!]
+    \begin{center}
+      \includegraphics[width=0.25\columnwidth]{./pictures/Questions.jpg}
+    \end{center}  
+  \end{figure}
+\end{frame}
 
 \bibliography{presentation_1g2gEurope}
 \bibliographystyle{plain}
