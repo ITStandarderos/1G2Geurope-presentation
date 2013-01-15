@@ -31,12 +31,12 @@
       };
       \only<2>{
       \begin{scope}[x={(timeline.south east)},y={(timeline.north west)}]
-          \draw[red,ultra thick,rounded corners, fill=red!60] (0,0.05) rectangle (0.35,0.15);
-          \node[anchor=north west,inner sep=0] (timeline) at (0,0) {\small{Pre-standardisation}};
-          \draw[blue,ultra thick,rounded corners, fill=blue!60] (0.35,0.05) rectangle (0.65,0.15);
-          \node[anchor=north west,inner sep=0] (timeline) at (0.35,0) {\small{Standard Production}};
-          \draw[green,ultra thick,rounded corners, fill=green!60] (0.65,0.05) rectangle (0.9,0.15);
-          \node[anchor=north west,inner sep=0] (timeline) at (0.65,0) {\small{Standard Diffusion}};
+          \draw[red,ultra thick,rounded corners, fill=red!60, opacity=.7] (0,0.05) rectangle (0.35,0.15);
+          \node[anchor=north west, color=red!60, inner sep=0] (timeline) at (0,0) {\small{Pre-standardisation}};
+          \draw[blue,ultra thick,rounded corners, fill=blue!60, opacity=.7] (0.35,0.05) rectangle (0.65,0.15);
+          \node[anchor=north west, color=blue!60, inner sep=0] (timeline) at (0.35,0) {\small{Standard Production}};
+          \draw[green,ultra thick,rounded corners, fill=green!60, opacity=.7] (0.65,0.05) rectangle (0.9,0.15);
+          \node[anchor=north west, color=green!60, inner sep=0] (timeline) at (0.65,0) {\small{Standard Diffusion}};
       \end{scope}}
   \end{tikzpicture}
 \end{frame} 
